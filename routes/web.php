@@ -2,6 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', fn() => response()->json(['app' => 'Student MS API', 'version' => '1.0.0']));
